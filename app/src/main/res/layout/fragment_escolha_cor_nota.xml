@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrincipal">
+
+    <TextView
+        android:id="@+id/escolha_cor_nota_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Escolha a cor da nota"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/escolha_cor_nota_opcao_amarela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_btn_nota_amarela"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/escolha_cor_nota_opcao_vermelha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/escolha_cor_nota_titulo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/escolha_cor_nota_opcao_vermelha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_btn_nota_vermelha"
+        app:layout_constraintEnd_toStartOf="@id/escolha_cor_nota_opcao_verde"
+        app:layout_constraintStart_toEndOf="@id/escolha_cor_nota_opcao_amarela"
+        app:layout_constraintTop_toTopOf="@id/escolha_cor_nota_opcao_amarela" />
+
+    <ImageView
+        android:id="@+id/escolha_cor_nota_opcao_verde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_btn_nota_verde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/escolha_cor_nota_opcao_vermelha"
+        app:layout_constraintTop_toTopOf="@id/escolha_cor_nota_opcao_amarela" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
